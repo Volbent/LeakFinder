@@ -1,0 +1,45 @@
+{
+  "currentUserRole": "admin",
+  "monthlyBudgetLimit": 1500,
+  "subscriptions": [
+    {
+      "id": "sub_101",
+      "name": "Netflix Mobile",
+      "category": "OTT",
+      "amount": 149,
+      "currency": "INR",
+      "billingCycle": "Monthly",
+      "nextRenewalDate": "2026-11-05",
+      "sharedWith": "Self",
+      "status": "Active",
+      "autoPay": true,
+      "usageFrequency": "High"
+    },
+    {
+      "id": "sub_102",
+      "name": "Cult.fit Pro Gym",
+      "category": "Fitness",
+      "amount": 1200,
+      "currency": "INR",
+      "billingCycle": "Monthly",
+      "nextRenewalDate": "2026-11-02",
+      "sharedWith": "Self",
+      "status": "Active",
+      "autoPay": true,
+      "usageFrequency": "Low"
+    },
+    {
+      "id": "sub_103",
+      "name": "Spotify Family Plan",
+      "category": "Music",
+      "amount": 179,
+      "currency": "INR",
+      "billingCycle": "Monthly",
+      "nextRenewalDate": "2026-11-12",
+      "sharedWith": "Family (4 members)",
+      "status": "Trial",
+      "autoPay": true,
+      "usageFrequency": "Medium"
+    }
+  ]
+}
