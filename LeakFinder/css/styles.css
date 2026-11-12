@@ -1,1 +1,86 @@
+/* css/styles.css - Custom Flexbox/Grid tweaks & mobile viewport polish */
+
+:root {
+  --brand-dark: #0f172a;
+  --leak-red: #dc2626;
+  --leak-bg: #fef2f2;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #1e293b;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.navbar-brand-badge {
+  background: linear-gradient(135deg, #ef4444, #f97316);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 0.5rem;
+}
+
+/* CSS Grid for KPI Cards */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.kpi-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.kpi-card-leak {
+  border-left: 4px solid var(--leak-red);
+  background-color: var(--leak-bg);
+}
+
+.table-danger-subtle {
+  background-color: #fff1f2 !important;
+}
+
+.table-warning-subtle {
+  background-color: #fffbeb !important;
+}
+
+/* Responsive Tablet & Phone-Width Adjustments */
+@media (max-width: 992px) {
+  .kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-toolbar {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+
+  .action-toolbar .btn {
+    width: 100%;
+  }
+}
+
+/* Clean Print / PDF export view */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+}
 
